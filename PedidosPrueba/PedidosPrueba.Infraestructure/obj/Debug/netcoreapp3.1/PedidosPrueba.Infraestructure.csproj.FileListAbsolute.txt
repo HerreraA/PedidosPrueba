@@ -1,0 +1,16 @@
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.deps.json
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.dll
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.pdb
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.dll
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.pdb
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.AssemblyInfo.cs
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.csproj.CopyComplete
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.dll
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.pdb
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.runtimeconfig.json
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.runtimeconfig.dev.json
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.genruntimeconfig.cache

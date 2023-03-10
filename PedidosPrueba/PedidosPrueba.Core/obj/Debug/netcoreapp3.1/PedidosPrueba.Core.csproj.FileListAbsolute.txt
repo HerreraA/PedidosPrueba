@@ -1,0 +1,10 @@
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.deps.json
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.dll
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.pdb
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.AssemblyInfoInputs.cache
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.AssemblyInfo.cs
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.csproj.CoreCompileInputs.cache
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.dll
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.pdb
+C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.csproj.AssemblyReference.cache
