@@ -5,6 +5,8 @@ const path = require('path');
 const loginRouter = require('./routes/login');
 const orderRouter = require('./routes/order');
 
+app.use(express.static(path.join(__dirname, "./public")))
+
 // template engine
 app.set("view engine", "ejs");
 // app.set('views','./views')

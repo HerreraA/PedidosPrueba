@@ -1,58 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
-<body>
-    <main>
-      <section class="text-center text-lg-start"> 
-        <table class="col-8 table table-striped-columns">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Numero</th>
-                <th scope="col">Valor</th>
-                <th scope="col">Estado</th>
-                <th scope="col">crear</th>
-                <th scope="col">borrar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@fat</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+<%- include('./partials/head') %>
+
+<%- include('./partials/header') %>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-center align-items-center" style="height: 70vh;">
+
+        <table class="table table-striped-columns">
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Numero</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Opciones</th>
+            </tr>
+          </thead>
+          <tbody class="agregarPedido">
+        </table>
+
+        <!-- Button trigger modal (CREAR PRODUCTO)-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FormularioCrear">
+          Crear nuevo pedido
+        </button>
+      </div>
+    </div>
+
+<!-- Modal EDITAR-->
+<div class="modal fade" id="FormularioEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <!-- Titulo Dinamico -->
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar</h1>
+        <!-- Titulo Dinamico -->
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Formulario Dinamico -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Fecha</label>
+            <input class="inputsCrear" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Valor pedido</label>
+            <input class="inputsCrear" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Numero pedido</label>
+            <input class="inputsCrear" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Estado</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected="P">Pendiente</option>
+              <option value="D">Despachado</option>
+              <option value="E">En proceso</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Observaciones</label>
+            <input class="inputsCrear" type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
       
+      <!-- Formulario Dinamico -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal EDITAR -->
+
+<!-- Modal Crear-->
+<div class="modal fade" id="FormularioCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <!-- Titulo Dinamico -->
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Crear</h1>
+        <!-- Titulo Dinamico -->
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Formulario Dinamico -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Fecha</label>
+            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Valor pedido</label>
+            <input type="text" name="Valor" class="form-control" id="Valor">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Numero pedido</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Estado</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected="P">Pendiente</option>
+              <option value="D">Despachado</option>
+              <option value="E">En proceso</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Observaciones</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
       
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-</body>
+      <!-- Formulario Dinamico -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button class="botonPrueba">hola</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Crear -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+
+      <script src="/order.js"></script>
+  </body>
+
 </html>
