@@ -1,7 +1,9 @@
-﻿using PedidosPrueba.Core.Interfaces;
+﻿using PedidosPrueba.Core.Entidades;
+using PedidosPrueba.Core.Interfaces;
 using PedidosPrueba.Core.Interfaces.Repositorios;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PedidosPrueba.Core.Servicios
@@ -17,9 +19,9 @@ namespace PedidosPrueba.Core.Servicios
             _iPedidosRepositorio = iPedidosRepositorio;
         }
 
-        public string ObtenerListadoPedidos()
+        public List<Pedidos> ObtenerListadoPedidos()
         {
-           string valorRepo = _iPedidosRepositorio.ObtenerListaPedidos();
+           List<Pedidos> valorRepo = _iPedidosRepositorio.ObtenerListaPedidos().ToList();
             return valorRepo;
         }
         public void ObtenerPedidoId()

@@ -25,9 +25,9 @@ namespace PedidosPrueba.Api.Controllers
         [HttpGet]
         [Route("ObtenerListaUsuario")]
 
-        public string ObtenerListaUsuario()
+        public void ObtenerListaUsuario()
         {
-            return _iListadoServicio.ObtenerListaUsuario();
+            //return _iListadoServicio.ObtenerListaUsuario();
         }
 
     }

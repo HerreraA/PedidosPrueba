@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PedidosPrueba.Core.Entidades;
 using PedidosPrueba.Core.Interfaces;
 using PedidosPrueba.Core.Servicios;
 using System;
@@ -24,10 +25,8 @@ namespace PedidosPrueba.Api.Controllers
 
         [HttpGet]
         [Route("ObtenerListaPedisos")]
-        public string ObtenerListadoPedidos()
+        public List<Pedidos> ObtenerListadoPedidos()
         {
-
-           
            return _iPedidosServicio.ObtenerListadoPedidos();
            
         }

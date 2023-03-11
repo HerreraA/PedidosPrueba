@@ -14,3 +14,19 @@ C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructu
 C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.runtimeconfig.json
 C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.runtimeconfig.dev.json
 C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.genruntimeconfig.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.deps.json
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.runtimeconfig.json
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.runtimeconfig.dev.json
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.dll
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.pdb
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.dll
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.pdb
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.AssemblyInfo.cs
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.csproj.CopyComplete
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.dll
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.pdb
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Infraestructure\obj\Debug\netcoreapp3.1\PedidosPrueba.Infraestructure.genruntimeconfig.cache

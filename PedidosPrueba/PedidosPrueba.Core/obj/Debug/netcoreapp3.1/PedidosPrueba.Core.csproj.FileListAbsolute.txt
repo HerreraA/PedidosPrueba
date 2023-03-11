@@ -8,3 +8,13 @@ C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debu
 C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.dll
 C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.pdb
 C:\Users\andres.herrera\Desktop\prueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.csproj.AssemblyReference.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.deps.json
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.dll
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\bin\Debug\netcoreapp3.1\PedidosPrueba.Core.pdb
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.csproj.AssemblyReference.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.AssemblyInfoInputs.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.AssemblyInfo.cs
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.csproj.CoreCompileInputs.cache
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.dll
+C:\Users\JAMES\Documents\00 - NOA\01 - PROYECTOS\08 - ProyectoAndres\PedidosPrueba\PedidosPrueba\PedidosPrueba.Core\obj\Debug\netcoreapp3.1\PedidosPrueba.Core.pdb

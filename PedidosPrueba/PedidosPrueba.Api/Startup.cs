@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,6 +11,7 @@ using PedidosPrueba.Core.Interfaces;
 using PedidosPrueba.Core.Interfaces.Repositorios;
 using PedidosPrueba.Core.Interfaces.Servicios;
 using PedidosPrueba.Core.Servicios;
+using PedidosPrueba.Infraestructure.Datos;
 using PedidosPrueba.Infraestructure.Repositorios;
 using System;
 using System.Collections.Generic;
@@ -35,11 +37,14 @@ namespace PedidosPrueba.Api
             // Configuración de Swagger
             services.AddSwaggerGen();
 
+            // Inyección de dependencias - DB
+            services.AddDbContext<PedidosPruebaContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("CadenaConexion")));
+
             // Inyección de dependencias 
             services.AddTransient<IPedidosServicio, PedidosServicio>();
             services.AddTransient<IPedidosRepositorio, PedidoRepositorio>();
-            services.AddTransient<IListadoServicio, ListadoServicio>();
-
+            //services.AddTransient<IListadoServicio, ListadoServicio>();
 
 
         }
