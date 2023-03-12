@@ -3,5 +3,9 @@ const path = require('path');
 
 module.exports = [
 
-    body('')
+    body('usuario')
+        .notEmpty().withMessage('*Campo obligatorio'),
+    body('contraseña')
+        .notEmpty().withMessage('*Campo obligatorio')
+
 ]
