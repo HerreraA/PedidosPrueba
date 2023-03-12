@@ -1,12 +1,13 @@
 window.onload = () => {
-    let agregarPedido = document.querySelector(".agregarPedido")
 
-    fetch("https://young-sands-07814.herokuapp.com/api/products?limit=10&offset=0")
+  let agregarPedido = document.querySelector(".agregarPedido")
+
+  fetch("https://young-sands-07814.herokuapp.com/api/products?limit=10&offset=0")
     .then(data => data.json())
     .then(listaProductos => {
-        // productosObtenidos = listaProductos;
-        listaProductos.forEach(element => {
-            agregarPedido.innerHTML += `<tr>
+      // productosObtenidos = listaProductos;
+      listaProductos.forEach(element => {
+        agregarPedido.innerHTML += `<tr>
             <td>${element.title}</td>
             <td>${element.price}</td>
             <td>${element.description}</td>
@@ -21,42 +22,54 @@ window.onload = () => {
               </button>
             </td>
           </tr>`
-        });  
+      });
     })
 
 
-    let inputsCrear = document.querySelectorAll(".inputsCrear");
-    let botonPrueba = document.querySelector(".botonPrueba");
-    let inputP = document.getElementById("Valor").value;
 
-    botonPrueba.addEventListener('click', (e)=>{
-        console.log(inputP);
-    })
+  let botonPrueba = document.querySelector(".botonPrueba");
+  let inputP = document.getElementById("Valor").value;
+  let nombreUsuario = document.querySelector('.nombreUsuario')
 
-     // traes usuarios
-    fetch("https://young-sands-07814.herokuapp.com/api/users")
+  botonPrueba.addEventListener('click', (e) => {
+    console.log(inputP);
+  })
+
+
+
+
+  // traer usuarios
+  fetch("https://young-sands-07814.herokuapp.com/api/users")
     .then(data => data.json())
     .then(listaUsuarios => {
-        console.log(listaUsuarios);
+      console.log(listaUsuarios);
     })
 
-    // fetch("https://young-sands-07814.herokuapp.com/api/products", {
-    //    method: "POST",
-    //    body:  JSON.stringify(
-    //     {
-    //         title: "ProductoNuevo",
-    //         price: 322,
-    //         description: "prueba andy",
-    //         categoryId: 4,
-    //         images: ["https://placeimg.com/640/480/any?r=0.08562212953556525"]
-    //     },
-    //    ),
-    //    headers: {
-    //     'Content-Type' : 'application/json'
-    //    }
-    // })
-    // .then(data => data.json())
-    // .then(listaUsuarios => {
-    //     console.log(listaUsuarios);
-    // })
+
+
+  // usar nombre se usuario del localstorage
+  let local = window.localStorage.getItem('usuarioLogeado');
+  let obj = JSON.parse(local)
+  nombreUsuario.innerHTML = 'Hola ' + obj.usuarioLogin
+
+
+  // fetch("https://young-sands-07814.herokuapp.com/api/products", {
+  //    method: "POST",
+  //    body:  JSON.stringify(
+  //     {
+  //         title: "ProductoNuevo",
+  //         price: 322,
+  //         description: "prueba andy",
+  //         categoryId: 4,
+  //         images: ["https://placeimg.com/640/480/any?r=0.08562212953556525"]
+  //     },
+  //    ),
+  //    headers: {
+  //     'Content-Type' : 'application/json'
+  //    }
+  // })
+  // .then(data => data.json())
+  // .then(listaUsuarios => {
+  //     console.log(listaUsuarios);
+  // })
 }

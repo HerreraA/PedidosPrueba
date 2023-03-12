@@ -16,4 +16,4 @@ app.use('/', loginRouter);
 app.use('/order', orderRouter);
 
 
-app.listen (3001, () => console.log('Alta de servidor: http://localhost:3001'));
+app.listen(3001, () => console.log('Alta de servidor: http://localhost:3001'));

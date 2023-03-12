@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
-<body>
-    <main >
-    <section class="text-center text-lg-start">
-    <style>
-      .cascading-right {
-        margin-right: -50px;
-      }
-  
-      @media (max-width: 991.98px) {
-        .cascading-right {
-          margin-right: 0;
-        }
-      }
-    </style>
-  
-    <!-- Jumbotron -->
-    <div class="container py-4">
-      <div class="row g-0 align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="card cascading-right" style="
+<%- include('./partials/head') %>
+
+  <body>
+    <main>
+      <section class="text-center text-lg-start">
+        <style>
+          .cascading-right {
+            margin-right: -50px;
+          }
+
+          @media (max-width: 991.98px) {
+            .cascading-right {
+              margin-right: 0;
+            }
+          }
+        </style>
+
+
+        <div class="container py-4">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="card cascading-right" style="
               background: hsla(0, 0%, 100%, 0.55);
               backdrop-filter: blur(30px);
               ">
-            <div class="card-body p-5 shadow-5 text-center">
-              <h2 class="fw-bold mb-5">ACCESO AL SISTEMA</h2>
-              <form method="GET">
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <div class="error" style="color: red"> </div>
-                  <input type="email" id="form3Example3" class="form-control" name="usuario" />
-                  <label class="form-label" for="form3Example3">Digita tu Id o correo electrónico</label>
+                <div class="card-body p-5 shadow-5 text-center" id="formulario">
+                  <h2 class="fw-bold mb-5">ACCESO AL SISTEMA</h2>
+
+                  <div class="alerta" style="color: red"></div>
+                  <div class="alertaInfo" style="color: red; display: none"></div>
+                  <!-- <div class="d-none alertaInfo" style="color: red">Por favor comuniquese con soporte técnico</div> -->
+
+                  <form>
+                    <!-- Input Usuario -->
+                    <div class="form-outline mb-4">
+                      <div class="error" style="color: red"> </div>
+                      <input type="text" id="form3Example3" class="form-control" name="usuario" />
+                      <label class="form-label" for="form3Example3">Digita tu usuario.</label>
+                    </div>
+
+                    <!-- Input Contraseña  -->
+                    <div class="form-outline mb-4">
+                      <div class="error" style="color: red"> </div>
+                      <input type="password" id="form3Example4" class="form-control" name="contraseña" />
+                      <label class="form-label" for="form3Example4">Digita tu contraseña</label>
+                    </div>
+
+
+                    <button type="button" class="btn btn-primary btn-block mb-4" id="boton">
+                      Ingresar
+                    </button>
+
+                  </form>
                 </div>
-  
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <div class="error" style="color: red"> </div>
-                  <input type="password" id="form3Example4" class="form-control" name="contraseña" />
-                  <label class="form-label" for="form3Example4">Digita tu contraseña</label>
-                </div>
-  
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4" id="boton">
-                  Ingresar
-                </button>
-            
-              </form>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <img src="https://cutewallpaper.org/23/wallpaper-cafe-hd/1769013071.jpg" class="w-100 rounded-4 shadow-4"
+                alt="" />
             </div>
           </div>
         </div>
-  
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded-4 shadow-4"
-            alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- Jumbotron -->
-    </section>
+
+      </section>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
     <script src="/login.js"></script>
   </body>
+
 </html>
