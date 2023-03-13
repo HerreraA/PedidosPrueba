@@ -20,8 +20,8 @@ namespace PedidosPrueba.Infraestructure.Datos
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=192.168.0.200;Database=PedidosPrueba;User Id=sa;Password=Sa123456;");
+                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Server=L-ANDRES-MTO\\SQLEXPRESS;Database=PedidosPrueba;User Id=sa;Password=Sa123456;");
             }
         }
 
@@ -58,6 +58,12 @@ namespace PedidosPrueba.Infraestructure.Datos
                 entity.HasKey(e => e.IdUsuario)
                     .HasName("PK__USUARIOS__5B65BF9789E6F3C0");
 
+                entity.ToTable("USUARIOS");
+
+                entity.Property(e => e.Estado)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
                 entity.Property(e => e.FechaCreacion).HasColumnType("date");
 
                 entity.Property(e => e.Password)
@@ -70,10 +76,6 @@ namespace PedidosPrueba.Infraestructure.Datos
                     .HasMaxLength(50)
                     .IsUnicode(false);
             });
-
-            OnModelCreatingPartial(modelBuilder);
         }
-
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

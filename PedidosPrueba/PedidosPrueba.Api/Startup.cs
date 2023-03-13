@@ -32,21 +32,27 @@ namespace PedidosPrueba.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            // Configuración de Swagger
+            services.AddControllers().AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            });
+
             services.AddSwaggerGen();
 
-            // Inyección de dependencias - DB
+            // Base de datos.
             services.AddDbContext<PedidosPruebaContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("CadenaConexion")));
 
-            // Inyección de dependencias 
+            // Inyección de dependencias.
             services.AddTransient<IPedidosServicio, PedidosServicio>();
             services.AddTransient<IPedidosRepositorio, PedidoRepositorio>();
-            //services.AddTransient<IListadoServicio, ListadoServicio>();
+            services.AddTransient<IUsuariosServicio, UsuariosServicio>();
+            services.AddTransient<IUsuariosRepositorio, UsuariosRepositorio>();
 
-
+            // Agregar configuración de los cors.
+            AddCors(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +75,8 @@ namespace PedidosPrueba.Api
                 options.RoutePrefix = string.Empty;
             });
 
+            app.UseCors("PedidosPrueba.Api");
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -78,6 +86,24 @@ namespace PedidosPrueba.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+        }
+
+        private void AddCors(IServiceCollection services)
+        {
+            List<string> strPermisoRest = new List<string>()
+            {
+                "GET", "POST", "PUT", "PATCH", "DELETE"
+            };
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("PedidosPrueba.Api", new Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder()
+                    .SetIsOriginAllowed(x => true)
+                    .AllowAnyHeader()
+                    .WithMethods(strPermisoRest.ToArray())
+                    .AllowCredentials()
+                    .Build());
             });
         }
     }

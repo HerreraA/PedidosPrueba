@@ -14,6 +14,8 @@ namespace PedidosPrueba.Core.Entidades
         public string UsuarioLogin { get; set; }
         public string Password { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public byte ReintentosPassword { get; set; }
+        public bool? Estado { get; set; }
 
         public virtual ICollection<Pedidos> Pedidos { get; set; }
     }

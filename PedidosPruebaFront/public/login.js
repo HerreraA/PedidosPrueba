@@ -24,7 +24,7 @@ window.onload = () => {
 
         //CONSUMO DE API PARA VALIDAR INFORMACION DE LOGIN    
         if (camposCorrectos) {
-            fetch("http://192.168.0.200:44304/api/Usuarios/Loguear", {
+            fetch("https://localhost:44303/api/Usuarios/Loguear", {
                 method: "POST",
                 body: JSON.stringify({
                     usuarioLogin: inputs[0].value,

@@ -15,7 +15,7 @@
                 <th scope="col">Numero</th>
                 <th scope="col">Valor</th>
                 <th scope="col">Estado</th>
-                <th scope="col">Descripción</th>
+                <th scope="col">Observaciones</th>
                 <th scope="col">Opciones</th>
               </tr>
             </thead>
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <!-- Modal EDITAR-->
+      <!-- Modal Editar-->
       <div class="modal fade" id="FormularioEditar" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -37,7 +37,7 @@
             <div class="modal-header">
 
               <!-- Titulo Dinamico -->
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Editar</h1>
+              <h1 class="modal-title fs-5 tituloEditar" id="exampleModalLabel">Editar</h1>
               <!-- Titulo Dinamico -->
 
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -48,20 +48,26 @@
               <form>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Fecha</label>
-                  <input class="inputsCrear" type="date" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
+                  <input type="date" name="InputFecha" class="form-control inputsEditarFecha apagarInputs"
+                    id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Valor pedido</label>
-                  <input class="inputsCrear" type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="number" name="InputValor"
+                    class="form-control inputsEditarValor validacionEditar apagarInputs" id="Valor">
+                  <div style="color: red;" class="errors"></div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Numero pedido</label>
-                  <input class="inputsCrear" type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="number" name="InputNumeroPedido"
+                    class="form-control inputsEditarNumeroPedido validacionEditar apagarInputs"
+                    id="exampleInputPassword1">
+                  <div style="color: red;" class="errors"></div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Estado</label>
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select inputsEditarEstado apagarInputs" name="InputEstado"
+                    aria-label="Default select example">
                     <option selected="P">Pendiente</option>
                     <option value="D">Despachado</option>
                     <option value="E">En proceso</option>
@@ -69,20 +75,23 @@
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Observaciones</label>
-                  <input class="inputsCrear" type="text" class="form-control" id="exampleInputPassword1">
+                  <input type="text" class="form-control inputsEditarObservaciones apagarInputs"
+                    id="exampleInputPassword1">
                 </div>
+
+                <div style="color: red;" class="errorGeneral"></div>
               </form>
             </div>
 
             <!-- Formulario Dinamico -->
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-primary botonesEditar">Editar</button>
             </div>
           </div>
         </div>
       </div>
-      <!-- Modal EDITAR -->
+      <!-- Modal Editar -->
 
       <!-- Modal Crear-->
       <div class="modal fade" id="FormularioCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -102,43 +111,46 @@
               <form>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Fecha</label>
-                  <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="date" name="InputFecha" class="form-control inputsCrearFecha" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Valor pedido</label>
-                  <input type="text" name="Valor" class="form-control" id="Valor">
+                  <input type="number" name="InputValor" class="form-control inputsCrearValor validacion" id="Valor">
+                  <div style="color: red;" class="errors"></div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Numero pedido</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="number" name="InputNumeroPedido" class="form-control inputsCrearNumeroPedido validacion"
+                    id="exampleInputPassword1">
+                  <div style="color: red;" class="errors"></div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Estado</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected="P">Pendiente</option>
+                  <select class="form-select inputsCrearEstado" name="InputEstado" aria-label="Default select example">
+                    <option value="P">Pendiente</option>
                     <option value="D">Despachado</option>
                     <option value="E">En proceso</option>
                   </select>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Observaciones</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1">
+                  <input type="text" class="form-control inputsCrearObservaciones" id="exampleInputPassword1">
                 </div>
+
+                <div style="color: red;" class="errorGeneral"></div>
               </form>
             </div>
 
             <!-- Formulario Dinamico -->
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-primary">Guardar</button>
-              <button class="botonPrueba">hola</button>
-
+              <button type="submit" class="btn btn-primary botonCrear">Crear</button>
             </div>
           </div>
         </div>
       </div>
       <!-- Modal Crear -->
-
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -150,7 +162,8 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
 
-      <script src="/order.js"></script>
+      <script src="/pedidos.js"></script>
+      <script src="/header.js"></script>
     </body>
 
 </html>

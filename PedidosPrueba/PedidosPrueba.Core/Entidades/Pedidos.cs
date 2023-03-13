@@ -1,6 +1,4 @@
-﻿using PedidosPrueba.Core.Entidades;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace PedidosPrueba.Core.Entidades
 {
